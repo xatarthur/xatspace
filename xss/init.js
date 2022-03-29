@@ -46,20 +46,20 @@ function theOne() {
                     if (data['d']['activities'][0]['type'] === 4) {
                         document.getElementById('status').innerHTML = `&nbsp;${data['d']['activities'][0]['state']}&nbsp;`;
                     } else {
-                        document.getElementById('status').innerText = `No status 😵`;
+                        document.getElementById('status').innerText = `Nothing to say 😵`;
                     }
                 } else {
-                    document.getElementById('status').innerText = `No status 😵`;
+                    document.getElementById('status').innerText = `Nothing to say 😵`;
                 }
 
             }
             if (data['d']['discord_status'] === 'offline') {
-                document.getElementById('status').innerText = 'I\'m offline! 😵';
+                document.getElementById('status').innerText = 'Unavailable 😴💤';
             }
 
             //spotify >>>>
             if (data.d.spotify === null) {
-                document.getElementById('listeningto').innerHTML = '<p>Nothing... 😵</p>'
+                document.getElementById('listeningto').innerHTML = '<p>I\'m not listening to anything.</p>'
             }else {
                 document.getElementById('listeningto').innerHTML = `<p>${data.d.spotify.artist}: ${data.d.spotify.song} 🎶🎶</p>`
             }
