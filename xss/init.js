@@ -59,7 +59,7 @@ function theOne() {
 
             //spotify >>>>
             if (data.d.spotify === null) {
-                document.getElementById('listeningto').innerHTML = '<p>I\'m not listening to anything.</p>'
+                document.getElementById('listeningto').innerHTML = '<p>I\'m not listening to anything 🎧</p>'
             }else {
                 document.getElementById('listeningto').innerHTML = `<p>${data.d.spotify.artist}: ${data.d.spotify.song} 🎶🎶</p>`
             }
