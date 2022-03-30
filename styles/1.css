@@ -130,6 +130,14 @@ header span {
     }
 }
 
+@media only screen and (max-width: 415px) {
+    .card2 {
+        margin-right: 35px!important;
+        margin-left: 4px!important;
+    }
+}
+
+
 @media only screen and (max-width: 376px) {
     .card {
         --scale: calc(100% - 6%);
