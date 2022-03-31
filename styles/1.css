@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Quicksand&display=swap');
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px;
+}
+
 .top-padding {
     padding-top: 7rem;
 }
@@ -137,7 +146,6 @@ header span {
     }
 }
 
-
 @media only screen and (max-width: 376px) {
     .card {
         --scale: calc(100% - 6%);
@@ -200,7 +208,7 @@ header span {
 }
 
 .thuk-img {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     border-radius: 0.6rem;
     overflow: hidden;
     margin-left: auto;
@@ -245,30 +253,3 @@ header span {
 ::-webkit-scrollbar-thumb:hover {
     background: #30303f;
 }
-
-
-
-/* footer */
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-body {
-    margin: 0 0 100px;
-}
-
-#bottom-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 40px;
-    width: 100%;
-}
-
-.center-footer {
-    text-align: center;
-    margin-top: 1rem;
-    color: #a8a8b8;
-}
-
