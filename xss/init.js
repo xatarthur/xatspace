@@ -59,11 +59,14 @@ function theOne() {
 
             //spotify >>>>
             if (data.d.spotify === null) {
-                document.getElementById('listeningto').innerHTML = '<p>I\'m not listening to anything 🎧</p>'
+                document.getElementById('listeningto').innerHTML = ``
             }else {
-                document.getElementById('listeningto').innerHTML = `<p>${data.d.spotify.artist}: ${data.d.spotify.song} 🎶🎶</p>`
+                document.getElementById('listeningto').innerHTML = `
+                <p class='card-desc'>
+                Spotify: <p>${data.d.spotify.artist}: ${data.d.spotify.song} 🎶🎶</p>
+                </p>`
             }
-
+            
             //Playing >>>>
             if (data.d.active_on_discord_desktop || data.d.active_on_discord_web || data.d.active_on_discord_mobile === true) {
                 if (data.d.activities.length !== 0) {
